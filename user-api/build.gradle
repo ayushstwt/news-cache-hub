@@ -1,0 +1,40 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.4.0'
+	id 'io.spring.dependency-management' version '1.1.6'
+}
+
+group = 'com.ayshriv'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(21)
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	// Lombok (Latest version)
+	compileOnly 'org.projectlombok:lombok:1.18.26'  // Latest version of Lombok
+	annotationProcessor 'org.projectlombok:lombok:1.18.26'  // For annotation processing
+
+	// Kafka (Latest version)
+	implementation 'org.springframework.kafka:spring-kafka:3.0.0'  // Latest version of Spring Kafka
+
+	// Redis Reactive (Latest version)
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis-reactive:3.0.0'  // Latest version of Spring Boot starter for Redis
+
+	// WebFlux (Latest version)
+	implementation 'org.springframework.boot:spring-boot-starter-webflux:3.0.0'  // Latest version of Spring Boot starter for WebFlux
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
