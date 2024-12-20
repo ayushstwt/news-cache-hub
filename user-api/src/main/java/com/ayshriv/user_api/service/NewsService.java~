@@ -1,0 +1,4 @@
+package com.ayshriv.user_api.service;
+
+public class NewsService {
+}

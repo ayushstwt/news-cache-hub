@@ -1,0 +1,8 @@
+package com.ayshriv.user_api.service;
+
+import reactor.core.publisher.Mono;
+
+public class NewsServiceImpl implements NewsService {
+
+    
+}

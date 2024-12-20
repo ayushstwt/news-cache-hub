@@ -25,8 +25,8 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok:1.18.26'  // Latest version of Lombok
 	annotationProcessor 'org.projectlombok:lombok:1.18.26'  // For annotation processing
 
-	// Kafka (Latest version)
-	implementation 'org.springframework.kafka:spring-kafka:3.0.0'  // Latest version of Spring Kafka
+	implementation 'org.springframework.kafka:spring-kafka:3.0.0'
+	implementation 'org.springframework:spring-context:6.0.0'
 
 	// Redis Reactive (Latest version)
 	implementation 'org.springframework.boot:spring-boot-starter-data-redis-reactive:3.0.0'  // Latest version of Spring Boot starter for Redis
