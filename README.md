@@ -9,7 +9,8 @@ This project follows a microservices architecture where:
 - Another microservice handles caching the news in Redis for efficient access.
 - Apache Kafka is used as the communication bridge between the microservices.
 
-![Project Architecture](image-description-placeholder)
+![image](https://github.com/user-attachments/assets/dda9d4f5-e4c9-4fe5-a0b3-9a548ab98e18)
+
 
 ## Features
 - **News Fetching**: Retrieves news articles from a public API.
